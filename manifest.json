@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Link List",
+    "version": "1.0",
+    "description": "A simple Chrome extension to save and organize links.",
+    "action": {
+      "default_popup": "index.html"
+    },
+    "permissions": [
+      "storage"
+    ]
+  }
+  
