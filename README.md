@@ -40,6 +40,7 @@ Install my-project with npm
 
 ## Demo
 
+![ezgif com-crop](https://github.com/user-attachments/assets/ecbb8f43-f6b7-4044-8316-b38ce5e5fdb5)
 
 
 
