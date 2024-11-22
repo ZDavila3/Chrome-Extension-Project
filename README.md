@@ -37,3 +37,11 @@ Install my-project with npm
 | Step 4 | `Click "Load unpacked" button & select project file` |
 | Step 5 | `Open another tab & run extension!`|
 
+
+## Demo
+
+
+
+
+## Authors
+- [@Zanett Davila](https://www.github.com/ZDavila3)
