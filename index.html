@@ -101,6 +101,9 @@
             flex-grow: 1;
             padding-right: 10px;
             min-width: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .remove-btn, .copy-btn {
@@ -125,15 +128,117 @@
         .copy-btn:hover {
             color: #357ab8;
         }
+        .toggle-btn {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+    /* Toggle button hover effect */
+        .toggle-btn:hover {
+            background-color: #357ab8;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+    /* Toggle button active (dark mode enabled) */
+        .toggle-btn.active {
+            background-color: #333;
+            color: #fff;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+        body.dark-mode {
+            background-color: #1c1c1c;
+            color: #ffffff;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        body.dark-mode div {
+            background-color: #333;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        body.dark-mode h2 {
+            color: #76ff03;
+        }
+
+        body.dark-mode input[type="text"] {
+            background-color: #2b2b2b;
+            color: #ffffff;
+            border-color: #76ff03;
+        }
+
+        body.dark-mode input[type="text"]:focus {
+            border: 1px solid #76ff03;
+        }
+
+        body.dark-mode .add-btn {
+            background-color: #76ff03;
+            color: white;
+        }   
+
+        body.dark-mode .add-btn:hover {
+            background-color: #4caf50;
+        }
+
+        body.dark-mode ul {
+            background-color: transparent;
+        }
+
+        body.dark-mode li {
+        background-color: #444;
+        border-bottom: 1px solid #555;
+        }
+
+        body.dark-mode li:hover {
+        background-color: #555;
+        }
+
+        body.dark-mode a {
+        color: #87cefa;
+        }
+
+        body.dark-mode .remove-btn {
+            color: #f44336;
+        }
+
+        body.dark-mode .remove-btn:hover {
+            color: #e57373;
+        }
+
+        body.dark-mode .copy-btn {
+            color: #76ff03;
+        }
+
+        body.dark-mode .copy-btn:hover {
+            color: #4caf50;
+        }
+        #toggleDarkMode {
+            background-color: #4a90e2; /* Default color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+/* Change color when active (dark mode enabled) */
+        #toggleDarkMode.active {
+            background-color: #76ff03; /* Active state color */
+            color: white;
+        }
 
     </style>
 </head>
 <body>
     <div>
+        <button id="toggleDarkMode" class="toggle-btn">Enable Dark Mode</button>
         <h2>Link List</h2>
         <p id="pointsDisplay">Points: 0</p> <!-- Points display -->
         <p id="achievementsDisplay"></p> <!-- Achievements display -->
-        
         <div class="input-container">
             <input type="text" id="linkInput" placeholder="Enter a link here">
             <button class="add-btn" id="addButton">+</button>
