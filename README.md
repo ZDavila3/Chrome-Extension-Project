@@ -17,3 +17,23 @@ I built Link List using HTML, CSS, and JavaScript to create a user-friendly Chro
 
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="50" height="50" /><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="50" height="50" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg" width="50" height="50" />
+
+
+## Installation / How to Run
+
+Install my-project with npm
+
+```bash
+  npm install Chrome-Extension-Project
+  cd Chrome-Extension-Project
+```
+
+
+| Step | Action     |
+| :-------- | :------- |
+| Step 1 | `Open Chrome` |
+| Step 2 | `Open Extensions`|
+| Step 3 | `toggle switch labeled "Developer Mode"` |
+| Step 4 | `Click "Load unpacked" button & select project file` |
+| Step 5 | `Open another tab & run extension!`|
+
